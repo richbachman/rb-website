@@ -1,0 +1,12 @@
+:root {
+  --base: 18px;
+  --maxWidth: 1080px;
+  --lightGrey: #f6f6f6;
+  --black: #242b2d;
+  --almostBlack: #2c3e50;
+  --bannerGrey: #ebedee;
+  --white: #fff;
+  --blue: #1167FB;
+
+  --basePadding: 30px;
+}
