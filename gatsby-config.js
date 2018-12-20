@@ -64,6 +64,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-stripe-checkout`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,
   ],
