@@ -67,7 +67,7 @@ a {
       background: var(--blue);
       transition: width .3s;
   }
-  &:hover, &:focus {
+  &:hover, &:focus, &.active {
     color: var(--black);
     &::after {
       width: 100%;
