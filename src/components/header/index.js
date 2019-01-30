@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
+import NavItem from '../navitem'
 import './_header.css'
 
 const logo = (
@@ -13,10 +15,11 @@ const Header = props => (
   <header>
     <div className="header__grid">
       <div className="header__logo">
-        {logo}
+        <Link to="/">{logo}</Link>
       </div>
       <div className="header__contact">
         <ul>
+          <NavItem to="/journal">Journal</NavItem>
           <li>
             <a href="mailto:rb@richbachman.com" title="Contact">Contact</a>
           </li>
@@ -24,7 +27,7 @@ const Header = props => (
       </div>
       <div className="header__content">
         <h1>{props.heading}</h1>
-        <p>{props.subheading}</p>
+        { props.subheading.length > 0 ? ( <p>{props.subheading}</p> ) : null }
       </div>
     </div>
   </header>

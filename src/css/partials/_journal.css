@@ -1,0 +1,47 @@
+.journal {
+  min-height: 378px;
+  padding: 0 var(--basePadding)  85px;
+  opacity: 0;
+  transform-origin: bottom;
+  animation: fade-in-bottom cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.4s forwards;
+  animation-delay: 0.6s;
+
+  &__grid {
+    display: grid;
+    /* grid-template: 40px auto / 20% auto 30%; */
+    grid-template-columns: 20% auto 30%;
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+  }
+
+  &__content {
+    grid-column: 2 / 4;
+
+    @media (--tablet) {
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0 0 var(--basePadding);
+    }
+
+    span {
+      font-size: 16px;
+      line-height: calc(16px * 1.75);
+    }
+
+    h3 {
+      margin: 5px 0 0;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: calc(22px * 1.75);
+    }
+  }
+}
