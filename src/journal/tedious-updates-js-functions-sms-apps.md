@@ -1,7 +1,7 @@
 ---
 path: "/journal/tedious-updates-js-functions-sms-apps"
 date: "2019-01-21"
-title: "Tedious updates, JS Functions, SMS Apps"
+title: "Tedious Updates, JavaScript Functions, SMS Apps"
 intro: "A solid week of updates, wrapping my head around JavaScript functions and building a couple of SMS chatbot apps."
 ---
 
@@ -15,7 +15,7 @@ The minor content updates were pretty straightforward, and I was able to complet
 
 The PHP upgrades were a little more exciting. I build the occasional Wordpress theme for a Portland-based digital agency. A few of those needed to be shored up for PHP 7.2. At first, this sounded like a pretty large task, since the themes were built a few years ago. Luckily, there were only some minor function changes. The rest of my time on this project was spent testing the sites after the upgrade.
 
-## JS Functions
+## JavaScript Functions
 
 Admit-ably, JS (JavaScript) is one of my weaker areas of front end development so one of my goals this year is to improve that. I'm ok with basic JS but struggle comprehending more advanced functions. My first course of action was to attend a free basic JS class at Galvanize. The class turned out to be a very basic intro class, but luckily toward the end, we reviewed basic JS functions. This was a big help, as it gave me a better understanding of how JS functions work.
 
@@ -25,7 +25,7 @@ Next step: Find and go through tutorials that include real-world examples.
 
 ## SMS Apps
 
-For the SendGrid Q1 Hackathon, I was tasked to set up an SMS chatbot tutorial so the team could build their own chatbots.
+For the [SendGrid](https://sendgrid.com) Q1 Hackathon, I was tasked to set up an SMS chatbot tutorial so the team could build their own chatbots.
 
 This was a challenging task for me since I hadn't really worked with any chatbot technologies before. I ended up running across a software named [TextEverything](https://github.com/DanielCordell/TextEverything). This turned out to be a great find since the software does some of the initial setup work and allows us to focus on writing actual chatbot plugins. TextEverything integrates with [Twilio](https://www.twilio.com/) to send SMS messages.
 
@@ -37,4 +37,4 @@ During the hackathon, we were able to figure out how to send MMS using the same 
 
 ## This Week
 
-My main focus this week is to continue wrapping my head around JS. Along with that, I'm going to continue work on the design primitives library I've been working on for SendGrid. Hopefully, I'll be able to get that integrated into our style guide and UI components.
+My main focus this week is to continue wrapping my head around JS. Along with that, I'm going to continue work on the design primitives library I've been working on for [SendGrid](https://sendgrid.com). Hopefully, I'll be able to get that integrated into our style guide and UI components.
