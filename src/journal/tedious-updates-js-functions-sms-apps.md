@@ -1,6 +1,6 @@
 ---
 path: "/journal/tedious-updates-js-functions-sms-apps"
-date: "2019-01-21"
+date: "2019-01-27"
 title: "Tedious Updates, JavaScript Functions, SMS Apps"
 intro: "A solid week of updates, wrapping my head around JavaScript functions and building a couple of SMS chatbot apps."
 ---
