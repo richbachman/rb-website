@@ -16,6 +16,10 @@ header {
     transform: rotate(9deg);
     background-image: linear-gradient(to right bottom, #e1e1e1, #e8e8e8, #f0f0f0, #f7f7f7, #ffffff);
 
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(to right bottom, #2a2f32, #262a2c, #262a2c, #212427, #1c1f21);
+    }
+
     @media (--tablet) {
       top: 9%;
       right: -30%;
@@ -34,6 +38,10 @@ header {
     z-index: -2;
     transform: rotate(9deg);
     background-image: linear-gradient(to left bottom, #ebe9e9, #f0eeef, #f5f4f4, #fafafa, #ffffff);
+
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(to right bottom, #2a2f32, #262a2c, #262a2c, #212427, #1c1f21);
+    }
 
     @media (--tablet) {
       height: 40%;

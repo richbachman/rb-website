@@ -16,6 +16,10 @@
     transform: rotate(-9deg);
     background-image: linear-gradient(to left top, #dadada, #e3e3e3, #ececec, #f6f6f6, #ffffff);
 
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(to right bottom, #2a2f32, #262a2c, #262a2c, #212427, #1c1f21);
+    }
+
     @media (--tablet) {
       right: -30%;
       left: -30%;
@@ -69,6 +73,10 @@
 
     &::after {
       display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      --white: #44484b;
     }
   }
 

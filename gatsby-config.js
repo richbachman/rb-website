@@ -70,7 +70,19 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: false,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,
   ],
