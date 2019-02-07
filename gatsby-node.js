@@ -35,3 +35,33 @@ exports.createPages = ({ actions, graphql }) => {
     })
   })
 }
+
+const { createRemoteFileNode } = require('gatsby-source-filesystem')
+
+exports.onCreateNode = async ({
+  node,
+  actions,
+  store,
+  cache,
+  createNodeId
+}) => {
+  const { createNodeField, createNode } = actions
+
+  if (node.internal.type === `MediumPost` && node.virtuals.previewImage) {
+    const mainImageNode = await createRemoteFileNode({
+      url: 'https://cdn-images-1.medium.com/max/768/' + node.virtuals.previewImage.imageId,
+      store,
+      cache,
+      createNode,
+      createNodeId
+    })
+
+    if (mainImageNode) {
+      createNodeField({
+        node,
+        name: `linktoMainImage___NODE`,
+        value: mainImageNode.id
+      })
+    }
+  }
+}

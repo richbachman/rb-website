@@ -1,9 +1,9 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 import './_articles.css'
 
-const mediumCDNUrl = `https://cdn-images-1.medium.com/max/768`
 const mediumUrl = `https://medium.com/@richbachman`
 
 const Articles = () => {
@@ -19,8 +19,14 @@ const Articles = () => {
                 title
                 virtuals {
                   subtitle
-                  previewImage {
-                    imageId
+                }
+                fields {
+                  linktoMainImage {
+                    childImageSharp {
+                      fluid(maxWidth: 768) {
+                        ...GatsbyImageSharpFluid_withWebp
+                      }
+                    }
                   }
                 }
                 author {
@@ -45,10 +51,7 @@ const Articles = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={`${mediumCDNUrl}/${node.virtuals.previewImage.imageId}`}
-                  alt={node.title}
-                />
+                <Img fluid={node.fields.linktoMainImage.childImageSharp.fluid} />
                 <div className="articles__text">
                   {node.title}
                   <span>{node.virtuals.subtitle}</span>
