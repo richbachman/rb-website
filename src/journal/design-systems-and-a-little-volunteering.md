@@ -1,7 +1,7 @@
 ---
-path: "/journal/design-systems-and-volunteer-opportunity"
+path: "/journal/design-systems-and-a-little-volunteering"
 date: "2019-02-10"
-title: "Design Systems and Volunteer Opportunity"
+title: "Design Systems and a Little Volunteering"
 intro: "Made some good progress on our design system. Mainly in the primitives/tokens area. Also signed up for a good volunteer opportunity."
 ---
 
