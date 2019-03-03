@@ -15,11 +15,11 @@ const Header = props => (
   <header>
     <div className="header__grid">
       <div className="header__logo">
-        <Link to="/">{logo}</Link>
+        <Link to="/" title="Home">{logo}</Link>
       </div>
       <div className="header__contact">
         <ul>
-          <NavItem to="/journal">Journal</NavItem>
+          <NavItem to="/journal" title="Journal">Journal</NavItem>
           <li>
             <a href="mailto:rb@richbachman.com" title="Contact">Contact</a>
           </li>
