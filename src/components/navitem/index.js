@@ -7,7 +7,7 @@ const isActive = ({ isCurrent }) => {
 
 const NavItem = props => (
   <li>
-    <Link to={props.to} getProps={isActive}>{props.children}</Link>
+    <Link to={props.to} getProps={isActive} title={props.title}>{props.children}</Link>
   </li>
 )
 
