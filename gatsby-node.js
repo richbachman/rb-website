@@ -64,4 +64,22 @@ exports.onCreateNode = async ({
       })
     }
   }
+
+  if (node.internal.type === `FlickrPhoto` && node.url_o) {
+    const flickrImageNode = await createRemoteFileNode({
+      url: node.url_o,
+      store,
+      cache,
+      createNode,
+      createNodeId
+    })
+
+    if (flickrImageNode) {
+      createNodeField({
+        node,
+        name: `linktoFlickrImage___NODE`,
+        value: flickrImageNode.id
+      })
+    }
+  }
 }

@@ -19,7 +19,7 @@ const Header = props => (
       </div>
       <div className="header__contact">
         <ul>
-          <NavItem to="/journal" title="Journal">Journal</NavItem>
+          <NavItem to="/photography" title="Photography">Photography</NavItem>
           <li>
             <a href="mailto:rb@richbachman.com" title="Contact">Contact</a>
           </li>

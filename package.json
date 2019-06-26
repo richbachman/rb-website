@@ -12,17 +12,21 @@
     "gatsby-plugin-postcss": "^2.0.2",
     "gatsby-plugin-prefetch-google-fonts": "^1.1.1",
     "gatsby-plugin-react-helmet": "^3.0.4",
+    "gatsby-plugin-remote-images": "^1.0.3",
     "gatsby-plugin-sharp": "^2.0.15",
     "gatsby-plugin-stripe-checkout": "^1.1.2",
     "gatsby-remark-prismjs": "^3.2.4",
     "gatsby-source-filesystem": "^2.0.12",
+    "gatsby-source-flickr": "0.0.2",
     "gatsby-source-medium": "^2.0.3",
     "gatsby-transformer-remark": "^2.1.17",
     "gatsby-transformer-sharp": "^2.1.9",
+    "moment": "^2.24.0",
     "prismjs": "^1.15.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-moment": "^0.9.2"
   },
   "keywords": [
     "gatsby"

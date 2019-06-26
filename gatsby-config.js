@@ -83,6 +83,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-source-flickr",
+      options: {
+        api_key: '00956a3c0533188c22924ff658cd398f',
+        user_id: '50548574@N08',
+        method: 'flickr.photosets.getPhotos',
+        photoset_id: '72157709255118973'
+      }
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,
   ],
