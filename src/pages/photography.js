@@ -12,7 +12,9 @@ const PhotographyPage = () => {
     <StaticQuery
       query={graphql`
         query {
-          allFlickrPhoto {
+          allFlickrPhoto(
+            sort: { order: DESC, fields: [datetaken] }
+          ) {
             edges {
               node {
                 id
