@@ -24,7 +24,7 @@ const PhotographyPage = () => {
                 fields {
                   linktoFlickrImage {
                     childImageSharp {
-                      fluid(maxWidth: 768) {
+                      fluid(maxWidth: 1080) {
                         ...GatsbyImageSharpFluid_withWebp
                       }
                     }
