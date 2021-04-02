@@ -3,6 +3,7 @@ import { Anchor } from '@twilio-paste/core/anchor';
 import { Box } from '@twilio-paste/core/box';
 import { Paragraph } from '@twilio-paste/core/paragraph';
 import { Separator } from '@twilio-paste/core/separator';
+import { SiteAvatar } from '../components/SiteAvatar';
 import { SiteHeading } from '../components/SiteHeading';
 import { SiteSubHeading } from '../components/SiteSubHeading';
 import { SiteFooter } from '../components/SiteFooter';
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
         paddingBottom="space200"
         paddingLeft="space60"
       >
+        <SiteAvatar />
         <SiteHeading>Rich Bachman</SiteHeading>
         <SiteSubHeading>
           Design Systems, Photography, &amp; Cycling
