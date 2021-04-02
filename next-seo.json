@@ -1,0 +1,20 @@
+{
+  "title": "Rich Bachman",
+  "titleTemplate": "%s | Rich Bachman",
+  "description": "UX Engineer, Design Systems Builder, Photographer, Cyclist.",
+  "additionalMetaTags": [{ "property": "author", "content": "Rich Bachman" }],
+  "twitter": {
+    "cardType": "summary_large_image",
+    "handle": "richbachman",
+    "site": "richbachman"
+  },
+  "openGraph": {
+    "type": "website",
+    "locale": "en_US",
+    "site_name": "Rich Bachman",
+    "profile": {
+      "firstName": "Rich",
+      "lastName": "Bachman"
+    }
+  }
+}
