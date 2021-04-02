@@ -13,7 +13,7 @@ interface GlobalStylesProps {
 const globalStyles = (props: GlobalStylesProps): any =>
   css({
     body: {
-      backgroundColor: '#232931',
+      backgroundColor: CustomTheme.backgroundColors.colorBackgroundBody,
     },
   })(props);
 
@@ -31,7 +31,7 @@ export const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         type="Person"
         url="https://richbachman.com"
       />
-      {/* @ts-ignore */}
+      {/* @ts-ignore - not including the whole GenericThemeShape in the custom theme. */}
       <StylingGlobals styles={globalStyles({ theme: CustomTheme })} />
       <CustomizationProvider theme={CustomTheme}>
         <Component {...pageProps} />
