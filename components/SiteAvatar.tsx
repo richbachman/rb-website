@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Box } from '@twilio-paste/core/box';
 
 export const SiteAvatar: React.FC = () => {
@@ -10,7 +9,8 @@ export const SiteAvatar: React.FC = () => {
       width="100px"
       marginBottom="space60"
     >
-      <Image
+      <Box
+        as="img"
         src="/rich_profile.jpg"
         alt="Picture of the Rich Bachman"
         width={100}
