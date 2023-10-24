@@ -1,0 +1,55 @@
+@layer tokens {
+    :where(:root, :host) {
+  --epGmUG: #232931;
+  --dImOBy: #4f545a;
+  --dKGtql: #bdbfc1;
+  --hFsEnx: #eeeeee;
+  --htkFeq: #4ecca3;
+  --bEWbKW: #4ecca3;
+  --cknYZW: 14px;
+  --NNfFt: 16px;
+  --gDyJuU: 18px;
+  --dTlMiP: 20px;
+  --jHJWOi: 24px;
+  --iljdtF: 28px;
+  --cLyXKk: 32px;
+  --cYJmlP: 40px;
+  --iNhwRi: 44px;
+  --ktaCHi: 48px;
+  --djJKvz: 72px;
+  --ghWdwL: 700;
+  --fVSZDc: 300;
+  --leEsKL: 500;
+  --llFanx: 400;
+  --hmWxqp: 600;
+  --fQxazg: 0;
+  --iDBZkt: 24px;
+  --cALPIq: 28px;
+  --duJaiP: 28px;
+  --bLbAPA: 28px;
+  --cGmeAh: 32px;
+  --hSRExa: 36px;
+  --iMOOXz: 40px;
+  --gyxdiY: 52px;
+  --htHGTF: 56px;
+  --fgniUd: 60px;
+  --rMZUY: 92px;
+  --iIcNqD: 100%;
+  --kKbbUK: 1rem;
+  --vWSpd: 1.25rem;
+  --jIBFVs: 1.5rem;
+  --fnojBo: 2.75rem;
+  --cJysOB: 4.75rem;
+  --ikokJA: 640px;
+  --kSvAmr: 768px;
+  --uwdhN: 1024px;
+  --eyfDzy: 1280px;
+  --dgHGKE: 1536px;
+  --eomHOU: 640px;
+  --iujnmj: 768px;
+  --gThSgZ: 1024px;
+  --cssArG: 1280px;
+  --jESPPc: 1536px
+}
+  }
+  

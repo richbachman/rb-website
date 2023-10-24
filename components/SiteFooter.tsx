@@ -1,32 +1,64 @@
-import { Anchor } from '@twilio-paste/core/anchor';
-import { Box } from '@twilio-paste/core/box';
-import { Stack } from '@twilio-paste/core/stack';
-import { Text } from '@twilio-paste/core/text';
+import { css } from '../styled-system/css';
 import { socialIcons } from '../constants/social-icons';
+
+const siteFooterContainerStyles = css({
+  textAlign: 'center',
+});
+
+const siteFooterIconContainerStyles = css({
+  display: 'flex',
+  justifyContent: 'center',
+  marginBottom: '50',
+});
+
+const stackStyles = css({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  gap: '60',
+});
+
+const siteFooterAnchorStyles = css({
+  color: 'textLink',
+  display: 'inline-flex',
+  textDecoration: 'underline',
+  _hover: { color: 'textLinkDarker' },
+  _active: { color: 'textLinkDarker' },
+  _focus: { color: 'textLinkDarker' },
+});
+
+const siteFooterCopyright = css({
+  fontSize: '10',
+  lineHeight: '10',
+});
 
 export const SiteFooter: React.FC = () => {
   return (
-    <Box textAlign="center">
-      <Box display="flex" justifyContent="center">
-        <Stack orientation="horizontal" spacing="space60">
+    <div className={siteFooterContainerStyles}>
+      <div className={siteFooterIconContainerStyles}>
+        <div className={stackStyles}>
           {socialIcons.map((icon) => (
-            <Anchor
-              display="inline-flex"
+            <a
+              className={siteFooterAnchorStyles}
               href={icon.URL}
               key={icon.NETWORK}
               title={icon.NETWORK}
             >
               {icon.SVG}
-            </Anchor>
+            </a>
           ))}
-        </Stack>
-      </Box>
-      <Text as="span" fontSize="fontSize10" lineHeight="lineHeight10">
+        </div>
+      </div>
+      <span className={siteFooterCopyright}>
         &copy; {new Date().getFullYear()} Rich Bachman //{' '}
-        <Anchor href="mailto:rb@richbachman.com" title="Contact">
+        <a
+          className={siteFooterAnchorStyles}
+          href="mailto:rb@richbachman.com"
+          title="Contact"
+        >
           Contact
-        </Anchor>
-      </Text>
-    </Box>
+        </a>
+      </span>
+    </div>
   );
 };

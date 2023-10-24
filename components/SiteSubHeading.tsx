@@ -1,13 +1,14 @@
-import { Text } from '@twilio-paste/core/text';
+import { css } from '../styled-system/css';
+
+const siteSubHeadingStyles = css({
+  color: 'textBrandHighlight',
+  fontSize: '50',
+  lineHeight: '50',
+  fontWeight: 'bold',
+  marginBottom: '120',
+  lg: { fontSize: '70', lineHeight: '70' },
+});
 
 export const SiteSubHeading: React.FC = (props) => (
-  <Text
-    as="p"
-    color="colorTextBrandHighlight"
-    lineHeight={['lineHeight50', 'lineHeight70']}
-    fontSize={['fontSize50', 'fontSize70']}
-    fontWeight="fontWeightBold"
-    marginBottom="space120"
-    {...props}
-  />
+  <p className={siteSubHeadingStyles} {...props} />
 );
