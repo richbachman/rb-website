@@ -7,6 +7,6 @@ const siteHeadingStyles = css({
   lg: { fontSize: '110', lineHeight: '110' },
 });
 
-export const SiteHeading: React.FC = (props) => (
+export const SiteHeading = ({ ...props }): JSX.Element => (
   <h1 className={siteHeadingStyles} {...props} />
 );

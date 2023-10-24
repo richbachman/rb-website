@@ -9,6 +9,6 @@ const siteSubHeadingStyles = css({
   lg: { fontSize: '70', lineHeight: '70' },
 });
 
-export const SiteSubHeading: React.FC = (props) => (
+export const SiteSubHeading = ({ ...props }): JSX.Element => (
   <p className={siteSubHeadingStyles} {...props} />
 );

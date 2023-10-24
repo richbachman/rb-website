@@ -32,7 +32,7 @@ const siteFooterCopyright = css({
   lineHeight: '10',
 });
 
-export const SiteFooter: React.FC = () => {
+export const SiteFooter = (): JSX.Element => {
   return (
     <div className={siteFooterContainerStyles}>
       <div className={siteFooterIconContainerStyles}>

@@ -9,7 +9,7 @@ const avatarContainerStyles = css({
   marginBottom: '60',
 });
 
-export const SiteAvatar: React.FC = () => {
+export const SiteAvatar = (): JSX.Element => {
   return (
     <div className={avatarContainerStyles}>
       <Image
