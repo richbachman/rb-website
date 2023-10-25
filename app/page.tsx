@@ -74,7 +74,7 @@ export default function Home() {
         Previously{' '}
         <a className={anchorStyles} href="https://www.localyzeapp.com">
           Localyze
-        </a>
+        </a>{' '}
         working on the{' '}
         <a className={anchorStyles} href="https://github.com/Localitos/pluto">
           Pluto Design System
@@ -82,7 +82,7 @@ export default function Home() {
         ,{' '}
         <a className={anchorStyles} href="https://trueplan.io">
           TruePlan
-        </a>
+        </a>{' '}
         working on the{' '}
         <a className={anchorStyles} href="https://github.com/trueplan/forecast">
           Forecast Design System
